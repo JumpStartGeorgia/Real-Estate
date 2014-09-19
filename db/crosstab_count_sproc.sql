@@ -1,7 +1,7 @@
  DELIMITER //
- drop procedure if exists crosstab_sum;
+ drop procedure if exists crosstab_count;
  
- CREATE PROCEDURE crosstab_sum(field_rows varchar(255), field_cols varchar(255), locale varchar(5))
+ CREATE PROCEDURE crosstab_count(field_rows varchar(255), field_cols varchar(255), locale varchar(5))
    BEGIN
 
       set SESSION group_concat_max_len = 1024*2;
